@@ -1,8 +1,3 @@
-
-/*
-1. Create the DEPT table based on the following table instance chart. Confirm that the table is
-   created.*/
-
 	Column Name   	ID      	NAME
 	Key Type
 	Nulls/Unique
@@ -18,8 +13,7 @@
 	DESCRIBE dept
 
 
-2. Create the EMP table based on the following table instance chart.Confirm that the
-   table is created.
+2. 
 
 	Column Name   	ID 	   LAST_NAME 	FIRST_NAME 	DEPT_ID
 	Key Type
@@ -37,34 +31,28 @@
 	
 	DESCRIBE emp
 
-3. Modify the EMP table to allow for longer employee last names. Confirm your modification.
-
+3. 
 	ALTER TABLE emp
 	MODIFY (last_name VARCHAR2(50));
 
 	DESCRIBE emp
 
-4. Create the EMPLOYEES2 table based on the structure of the EMPLOYEES table. Include only
-   the EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY, and DEPARTMENT_ID columns.
-   Name the columns in your new table ID, FIRST_NAME, LAST_NAME, SALARY , and
-   DEPT_ID, respectively.
+4. 
 
 	CREATE TABLE employees2 AS
 	SELECT employee_id id, first_name, last_name, salary,
 	department_id dept_id
 	FROM employees;
 
-5. Drop the EMP table.
+5. 
 
 	DROP TABLE emp;
 
-6. Rename the EMPLOYEES2 table to EMP.
+6. 
 
 	RENAME employees2 TO emp;
 
-7. Add a comment to the DEPT and EMP table definitions describing the tables. Confirm your
-   additions in the data dictionary.
-
+7.
    COMMENT ON TABLE emp IS ’Employee Information’;
    COMMENT ON TABLE dept IS ’Department Information’;
 
@@ -73,8 +61,7 @@
 	   WHERE table_name = ’DEPT’
   	 OR table_name = ’EMP’;
 
-8. Drop the FIRST_NAME column from the EMP table. Confirm your modification by checking the
-    description of the table.
+8. 
 	
 	ALTER TABLE emp
 	DROP COLUMN FIRST_NAME;
