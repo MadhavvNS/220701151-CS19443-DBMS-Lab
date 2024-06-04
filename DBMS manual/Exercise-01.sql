@@ -1,12 +1,4 @@
-	Column Name   	ID      	NAME
-	Key Type
-	Nulls/Unique
-	FK Table
-	FK Column
-	Data type 	   Number 	VARCHAR2
-	Length 		      7 	      25
-
-	CREATE TABLE dept
+1.	CREATE TABLE dept
 	(id NUMBER(7),
 	name VARCHAR2(25));
 	
@@ -14,14 +6,6 @@
 
 
 2. 
-
-	Column Name   	ID 	   LAST_NAME 	FIRST_NAME 	DEPT_ID
-	Key Type
-	Nulls/Unique
-	FK Table
-	FK Column
-	Data type   	 Number 	VARCHAR2  	VARCHAR2  	Number
-	Length 		        7 	     25 		   25		    7	
 
 	CREATE TABLE emp
 	(id NUMBER(7),
